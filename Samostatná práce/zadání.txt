@@ -1,0 +1,5 @@
+DÁMA PRCI KASPER
+2 hráči
+Frontend 
+Backend se Socket.id
+Dokumentace

@@ -1,0 +1,96 @@
+/* Tělo stránky se zarovnáním a stylováním */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Kontejner pro hrací desku a vedlejší panel */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Zarovnání do horní části */
+}
+
+/* Stylování pro hrací desku */
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 2px;
+  background-color: #333;
+  border: 5px solid #333;
+  margin-right: 30px; /* Mezera mezi deskou a vedlejším panelem */
+}
+
+/* Vedlejší panel s časovačem, obrázkem a ukazatelem tahu */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+#timer, #currentTurn {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#imageDisplay {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Čtverce na hrací desce */
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.black {
+  background-color: #333;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.piece {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.piece:contains('K') {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.highlight {
+  border: 3px solid yellow;
+}

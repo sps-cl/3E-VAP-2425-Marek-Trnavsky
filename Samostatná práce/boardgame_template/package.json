@@ -1,0 +1,15 @@
+{
+  "name": "jmeno",
+  "version": "1.0.0",
+  "description": "<<popis>>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "<<nazev vaseho tymu>>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "socket.io": "^4.8.0"
+  }
+}
